@@ -7,12 +7,12 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.55.5" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
   
-    Home
+    
+    Docker
   
  | Jenkins Doc</title>
 
@@ -24,7 +24,6 @@
 <link rel="icon" href="/docs/jenkins/favicon.png" type="image/x-icon">
 
 
-<link rel="alternate" type="application/rss+xml" href="https://jaswine.com/docs/jenkins/index.xml" title="Jenkins Doc" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -51,7 +50,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   <style>
-  nav ul a[href$="\2f docs\2fjenkins\2f "] {
+  nav ul a[href$="\2f docs\2fjenkins\2f docs\2finstall\2f docker\2f "] {
       color: #004ed0;
   }
   </style>
@@ -91,7 +90,8 @@ https://github.com/alex-shpak/hugo-book
   </label>
   <strong>
   
-    Home
+    
+    Docker
   
 </strong>
 </header>
@@ -99,11 +99,37 @@ https://github.com/alex-shpak/hugo-book
       
 <article class="markdown">
 
-<h1 id="jenkins">Jenkins</h1>
+<h1 id="使用docker安装jenkins">使用Docker安装Jenkins</h1>
 
-<p><code>Jenkins</code>是啥？<code>Jenkins</code>的图标是一个英国绅士大管家一样，这个图标很好的说明了<code>Jenkins</code>的作用。</p>
+<hr />
 
-<p>在我们的项目中使用<code>Jenkins</code>就相当于给我们的项目请了一个大管家一样，我们只负责写代码和提交代码，后面的编译、打包、测试、部署都由<code>Jenkins</code>帮我们去做了，这样基本上就实现了自动化的运维了，后续接上自动化测试就是一条完整的项目上面链条了。</p>
+<p><strong>@Jenkins版本:</strong> jenkinsci/blueocean</p>
+
+<hr />
+
+<h2 id="1-拉取镜像">1.拉取镜像</h2>
+
+<blockquote>
+<p>Docker安装教程&mdash;<a href="https://jaswine.com/docs/docker/docs/install/install/">Docker Doc -Jaswine</a></p>
+</blockquote>
+
+<pre><code class="language-shell">
+docker pull jenkinsci/blueocean
+
+</code></pre>
+
+<h2 id="2-运行镜像">2.运行镜像</h2>
+
+<pre><code class="language-shell">docker run -u root --rm   -d  -p 8080:8080  -p 50000:50000  jenkinsci/blueocean
+</code></pre>
+
+<p>当然你也可以修改一些参数，这属于Docker的内容，可以参考这个文档<a href="https://www.runoob.com/docker/docker-command-manual.html">Docker命令 - 菜鸟教程</a></p>
+
+<h2 id="3-测试安装是否成功">3.测试安装是否成功</h2>
+
+<p>访问<code>http：//host:8080</code>是否会跳转到Jenkins的欢迎页面</p>
+
+<p><img src="https://cdn.jaswine.com/Web/Tech-Doc/jenkins/install/jenkins1.png" alt="Jenkins" /></p>
 </article>
 
       
@@ -117,7 +143,12 @@ https://github.com/alex-shpak/hugo-book
   <aside class="book-toc level-3 fixed">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#jenkins">Jenkins</a></li>
+<li><a href="#使用docker安装jenkins">使用Docker安装Jenkins</a>
+<ul>
+<li><a href="#1-拉取镜像">1.拉取镜像</a></li>
+<li><a href="#2-运行镜像">2.运行镜像</a></li>
+<li><a href="#3-测试安装是否成功">3.测试安装是否成功</a></li>
+</ul></li>
 </ul>
 </nav>
   </aside>

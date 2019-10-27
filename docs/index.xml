@@ -12,11 +12,23 @@
     
     <item>
       <title></title>
-      <link>https://jaswine.com/docs/jenkins/docs/install/install/</link>
+      <link>https://jaswine.com/docs/jenkins/docs/install/docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/docs/jenkins/docs/install/install/</guid>
-      <description></description>
+      <guid>https://jaswine.com/docs/jenkins/docs/install/docker/</guid>
+      <description>使用Docker安装Jenkins @Jenkins版本: jenkinsci/blueocean
+1.拉取镜像  Docker安装教程&amp;mdash;Docker Doc -Jaswine
+ docker pull jenkinsci/blueocean  2.运行镜像 docker run -u root --rm -d -p 8080:8080 -p 50000:50000 jenkinsci/blueocean  当然你也可以修改一些参数，这属于Docker的内容，可以参考这个文档Docker命令 - 菜鸟教程
+3.测试安装是否成功 访问http：//host:8080是否会跳转到Jenkins的欢迎页面</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/jenkins/docs/install/jar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/jenkins/docs/install/jar/</guid>
+      <description> 使用Jar安装Jenkins </description>
     </item>
     
   </channel>
