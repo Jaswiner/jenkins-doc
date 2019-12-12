@@ -18,7 +18,7 @@
 
 
 
-<link rel="stylesheet" href="/docs/jenkins/book.min.b7d5ee4f671b06dde5fd61ab409a54048ba7759e99fed39ac32a7be45d4d92cd.css">
+<link rel="stylesheet" href="/docs/jenkins/book.min.4a67c924865f7c7b6a18b71c1fab21271aa117784134ae2f5887b98c6e90a2b3.css">
 
 
 <link rel="icon" href="/docs/jenkins/favicon.png" type="image/x-icon">
@@ -59,13 +59,13 @@ https://github.com/alex-shpak/hugo-book
 <li><strong><em>安装</em></strong>
 
 <ul>
-<li><a href="/docs/jenkins/docs/install/jar/">Jar包安装</a></li>
+<li><a href="/docs/jenkins/docs/install/jar/">Jar包安装[推荐]</a></li>
 <li><a href="/docs/jenkins/docs/install/docker/">Docker安装</a></li>
 </ul></li>
 <li><strong><em>配置</em></strong>
 
 <ul>
-<li><a href="#">JavaSE</a></li>
+<li><a href="/docs/jenkins/docs/config/ssh/">配置全局Git SSH</a></li>
 </ul></li>
 
 <li><p><strong><em>实例</em></strong></p></li>
@@ -100,6 +100,29 @@ https://github.com/alex-shpak/hugo-book
 <article class="markdown">
 
 <h1 id="使用jar安装jenkins">使用Jar安装Jenkins</h1>
+
+<hr />
+
+<p>@Jenkins版本:2.206</p>
+
+<hr />
+
+<h2 id="下载jar包">下载Jar包</h2>
+
+<p>下载地址<a href="https://jenkins.io/zh/download/">Jenkins下载地址</a></p>
+
+<h2 id="运行jenkins">运行Jenkins</h2>
+
+<p>运行Jenkins直接一行命令就OK了</p>
+
+<pre><code class="language-shell">
+java -jar jenkins.xx.jar.war
+
+</code></pre>
+
+<h2 id="tips-为什么推荐使用jar包方式">Tips:为什么推荐使用Jar包方式</h2>
+
+<p>我使用Docker版本的Jenkins会出现很多麻烦的事情，还是使用Jar独立运行的比较合适。</p>
 </article>
 
       
@@ -113,7 +136,12 @@ https://github.com/alex-shpak/hugo-book
   <aside class="book-toc level-3 fixed">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#使用jar安装jenkins">使用Jar安装Jenkins</a></li>
+<li><a href="#使用jar安装jenkins">使用Jar安装Jenkins</a>
+<ul>
+<li><a href="#下载jar包">下载Jar包</a></li>
+<li><a href="#运行jenkins">运行Jenkins</a></li>
+<li><a href="#tips-为什么推荐使用jar包方式">Tips:为什么推荐使用Jar包方式</a></li>
+</ul></li>
 </ul>
 </nav>
   </aside>
